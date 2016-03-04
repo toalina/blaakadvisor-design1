@@ -1,0 +1,20 @@
+.footer-input {
+  background: $color-dark-bg;
+  color: $color-text-light;
+  font-family: $font-montserrat-hairline;
+  span {
+    font-weight: 700;
+  }
+}
+
+.footer-social {
+  font-family: $font-montserrat-light;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+
