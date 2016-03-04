@@ -1,4 +1,5 @@
 .grow-money-wrapper {
+  padding: 3em 2em;
   background-image:
     radial-gradient(
       circle at top right,
@@ -16,7 +17,10 @@
 
 .grow-money-text-wrapper {
   text-align: center;
-
+  @media screen and (min-width: $breakpoint) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
 
 
 }

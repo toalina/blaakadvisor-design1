@@ -1,11 +1,15 @@
 .secure-wrapper {
   background: $color-secondary;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  // padding:
 }
 
 .secure-text-wrapper {
   text-align: center;
   color: $color-text-light;
-  // width: 30em;
+  max-width: 23em;
   @media screen and (min-width: $breakpoint) {
     text-align: left;
   }
@@ -13,6 +17,8 @@
     font-size: $size-xlg;
   }
   p {
+    margin-bottom: 0;
+    padding-bottom: 3em;
     // letter-spacing: 0.1em;
   }
 }

@@ -11,17 +11,22 @@
   <body>
     <header>
       <nav> <!-- Flex to end -->
-        <img src="../assets/BlaakAdvisor_Logo_Final.svg" alt="">
-        <ul> <!-- Make uppercase -->
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Register</a></li>
-        </ul>
+        <div class="nav-wrapper">
+          <figure>
+            <img src="../assets/BlaakAdvisor_Logo_Final.svg" alt="Blaak Advisor Logo">
+          </figure>
+          <ul> <!-- Make uppercase -->
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
       </nav>
+
       <div class="header-text-wrapper">
         <h1>Smart investments made simple.</h1>
         <h4>Investing that's simple, smart, and secure.</h4>
       </div>
-      <fieldset> <!-- Grab JS code from site -->
+      <fieldset class="header-input"> <!-- Grab JS code from site -->
         <input type="text" placeholder="enter your email">
         <button type="submit">Early Access</button>
       </fieldset>
@@ -86,7 +91,7 @@
     </section>
     <footer>
       <div class="footer-input">
-        <h3><span>Envision your future.</span> We'll help you get there.</h3>
+        <h3><strong>Envision your future.</strong> We'll help you get there.</h3>
         <fieldset>
           <input type="text" placeholder="enter your email">
           <button type="submit">Early Access</button>
@@ -95,11 +100,7 @@
       <div class="footer-social">
         <p>&copy; 2016 Acorns 2016 BLAAK | <a href="#">Terms & Conditions</a></p>
         <ul>
-          <li>
-            <a href="#">
-              <img src="assets/icons/instagram.svg" alt="Instagram icon">
-            </a>
-          </li>
+          <li><a href="#"><img src="assets/icons/instagram.svg" alt="Instagram icon"></a></li>
           <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook icon"></a></li>
           <li><a href="#"><img src="assets/icons/twitter.svg" alt="Twitter icon"></a></li>
           <li><a href="#"><img src="assets/icons/email.svg" alt="Email icon"></a></li>

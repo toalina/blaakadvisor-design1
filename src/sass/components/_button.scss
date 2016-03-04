@@ -1,24 +1,41 @@
 fieldset {
   border: 1px solid red;
-  max-width: 420px;
   border-radius: 1em;
-  padding: 0.2em 0em 0.2em 1em;
+  padding: 0.2em 1em;
   background: $color-primary;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  @media screen and (min-width: $breakpoint) {
+    max-width: 420px;
+    padding: 0em 0.2em 0em 0.5em;
+  }
 }
 
+input, button {
+  display: block;
+  margin: 0 auto;
+}
 input {
   width: 13em;
   border: 1px solid red;
   padding: 0.8em;
-  margin: 0 auto;
+  margin: 0.2em auto;
+  @media screen and (min-width: $breakpoint) {
+    display: inline-block;
+  }
 }
 button {
   border: none;
   border-radius: 1em;
   background: $color-button;
   color: $color-text-light;
+  text-transform: uppercase;
   padding: 1em;
   width: 11em;
-  text-transform: uppercase;
+  margin: 0.2em auto;
   font-family: $font-montserrat-light;
+    @media screen and (min-width: $breakpoint) {
+    display: inline-block;
+  }
 }
