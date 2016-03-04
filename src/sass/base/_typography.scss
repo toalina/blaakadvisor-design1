@@ -1,0 +1,35 @@
+// // Icon fonts
+// @font-face {
+//   font-family: 'icomoon';
+//   src:url('fonts/icomoon.eot?xktnuc');
+//   src:url('fonts/icomoon.eot?xktnuc#iefix') format('embedded-opentype'),
+//     url('fonts/icomoon.ttf?xktnuc') format('truetype'),
+//     url('fonts/icomoon.woff?xktnuc') format('woff'),
+//     url('fonts/icomoon.svg?xktnuc#icomoon') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// Montserrat-Hairline
+@font-face {
+  font-family: 'Montserrat-Hairline';
+  src:url('../fonts/Montserrat-Hairline.otf');
+  font-weight: normal;
+}
+
+//Montserrat-Light
+@font-face {
+  font-family: 'Montserrat-Light';
+  src:url('../fonts/Montserrat-Light.otf');
+  font-weight: light;
+}
+
+
+// PlayfairDisplay Regular
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src:url('../fonts/PlayfairDisplay-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
