@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  // padding:
 }
 
 .secure-text-wrapper {
@@ -15,6 +14,8 @@
   }
   h2 {
     font-size: $size-xlg;
+    margin-bottom: 0.3em;
+
   }
   p {
     margin-bottom: 0;

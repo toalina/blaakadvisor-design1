@@ -13,6 +13,13 @@
   h1, h3, h4 {
     font-family: $font-montserrat-light;
   }
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 0.3em;
+  }
 }
 
 .grow-money-text-wrapper {
@@ -21,6 +28,37 @@
     padding-left: 3em;
     padding-right: 3em;
   }
+}
 
+.grow-money-data-wrapper {
+  border: 1px solid green;
+  text-align: center;
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: flex-end;
+  // flex-wrap: wrap;
+  // width:
+  h2 {
+    border-bottom: 1px dotted $color-text-light;
+  }
+  h2, h4, h6 {
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  h4 {
+    margin-top: 0;
+  }
+}
 
+.start-with {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.years {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
