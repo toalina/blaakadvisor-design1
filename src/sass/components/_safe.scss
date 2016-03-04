@@ -6,12 +6,15 @@
   justify-content: space-around;
   flex-wrap: wrap;
   .safe-text-wrapper {
-    h2 {
-      font-size: $size-xlg;
-    }
     max-width: 23em;
     @media screen and (min-width: $breakpoint) {
       text-align: left;
+    }
+    h2 {
+      font-size: $size-xlg;
+    }
+    p {
+      line-height: 2em;
     }
   }
 

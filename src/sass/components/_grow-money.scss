@@ -7,26 +7,32 @@
       #c92252
     );
   color: $color-text-light;
-  h1, h2 {
-    font-size: $size-xlg;
-  }
   h1, h3, h4 {
     font-family: $font-montserrat-light;
   }
-  h1 {
-    margin-bottom: 0;
-  }
-
-  h2 {
-    margin-bottom: 0.3em;
-  }
 }
-
 .grow-money-text-wrapper {
   text-align: center;
   @media screen and (min-width: $breakpoint) {
     padding-left: 3em;
     padding-right: 3em;
+  }
+  h2 {
+    font-size: $size-xlg;
+    margin-bottom: 0.3em;
+  }
+  p {
+    line-height: 2em;
+  }
+}
+.projected-value {
+  h1 {
+    margin-bottom: 0;
+    font-size: $size-xlg;
+  }
+  h4 {
+    margin-top: 0;
+    text-transform: uppercase;
   }
 }
 
@@ -37,9 +43,11 @@
   // justify-content: space-around;
   // align-items: flex-end;
   // flex-wrap: wrap;
-  // width:
+
+
   h2 {
     border-bottom: 1px dotted $color-text-light;
+    font-size: $size-xlg;
   }
   h2, h4, h6 {
     text-transform: uppercase;
@@ -51,14 +59,16 @@
 }
 
 .start-with {
+  border: 1px solid pink;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
 .years {
+  border: 1px solid pink;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
