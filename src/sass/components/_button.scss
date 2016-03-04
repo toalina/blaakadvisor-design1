@@ -1,8 +1,9 @@
 fieldset {
   border: 1px solid red;
-  width: 40em;
+  width: 27em;
   border-radius: 1em;
   padding: 0.2em 0em 0.2em 1em;
+  background: $color-primary;
 }
 
 input {

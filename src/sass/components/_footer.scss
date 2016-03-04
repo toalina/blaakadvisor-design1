@@ -2,6 +2,11 @@
   background: $color-dark-bg;
   color: $color-text-light;
   font-family: $font-montserrat-hairline;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   span {
     font-weight: 700;
   }
@@ -9,10 +14,20 @@
 
 .footer-social {
   font-family: $font-montserrat-light;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   ul {
     list-style-type: none;
     li {
       display: inline-block;
+    }
+  }
+  a {
+    color: $color-text-dark;
+    &:hover {
+      color: $color-accent;
     }
   }
 }
