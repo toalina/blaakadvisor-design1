@@ -3,9 +3,12 @@
 }
 
 .secure-text-wrapper {
-  text-align: left;
+  text-align: center;
   color: $color-text-light;
   // width: 30em;
+  @media screen and (min-width: $breakpoint) {
+    text-align: left;
+  }
   h2 {
     font-size: $size-xlg;
   }

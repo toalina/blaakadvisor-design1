@@ -26,9 +26,14 @@ header {
     }
     a {
       padding: 0 0.5em;
+      color: black;
+      &:hover {
+        color: $color-accent;
+      }
     }
   }
   fieldset {
-    // margin: 0 auto;
+    margin: 0 auto;
+    display: block;
   }
 }

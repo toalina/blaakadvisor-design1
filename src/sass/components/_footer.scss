@@ -3,8 +3,10 @@
   color: $color-text-light;
   font-family: $font-montserrat-hairline;
   padding: 1em;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 
   span {

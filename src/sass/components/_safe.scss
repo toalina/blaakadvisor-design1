@@ -1,4 +1,9 @@
 .safe-wrapper {
+  text-align: center;
+  background: $color-light-bg;
+  h2 {
+    font-size: $size-xlg;
+  }
   img {
     max-width: 350px;
   }
