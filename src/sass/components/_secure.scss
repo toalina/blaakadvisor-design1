@@ -1,0 +1,15 @@
+.secure-wrapper {
+  background: $color-secondary;
+}
+
+.secure-text-wrapper {
+  text-align: left;
+  color: $color-text-light;
+  // width: 30em;
+  h2 {
+    font-size: $size-xlg;
+  }
+  p {
+    // letter-spacing: 0.1em;
+  }
+}

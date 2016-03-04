@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-    Blaak Advisor Design 1
     <header>
       <nav> <!-- Flex to end -->
         <img src="../assets/BlaakAdvisor_Logo_Final.svg" alt="">
@@ -19,8 +17,10 @@
           <li><a href="#">Register</a></li>
         </ul>
       </nav>
-      <h1>Smart investments made simple.</h1>
-      <h4>Investing that's simple, smart, and secure.</h4>
+      <div class="header-text-wrapper">
+        <h1>Smart investments made simple.</h1>
+        <h4>Investing that's simple, smart, and secure.</h4>
+      </div>
       <fieldset> <!-- Grab JS code from site -->
         <input type="text" placeholder="enter your email">
         <button type="submit">Early Access</button>
@@ -44,32 +44,39 @@
     </section>
 
     <section>
-      <div class="safe-text-wrapper">
-        <h2>Safe and Secure</h2>
-        <p>We take the security of your information and your money very seriously. Nothing is stored on the phone, and we use bank-level security and data encryption to secure everything at the server level.</p>
-        <p>Every BLAAK account is insured up to $500,000 by the Securities Investor Protection Corporation (SIPC).</p>
-      </div>
-      <div>
-        <img src="../assets/fingerprint.jpg" alt="Fingerprint">
+      <div class="safe-wrapper">
+        <div class="safe-text-wrapper">
+          <h2>Safe and Secure</h2>
+          <p>We take the security of your information and your money very seriously. Nothing is stored on the phone, and we use bank-level security and data encryption to secure everything at the server level.</p>
+          <p>Every BLAAK account is insured up to $500,000 by the Securities Investor Protection Corporation (SIPC).</p>
+        </div>
+        <div>
+          <img src="../assets/fingerprint.jpg" alt="Fingerprint">
+        </div>
       </div>
     </section>
 
     <section>
-      <div>
-        drag me wheel thing
-        <p>Monthly Fee</p>
-        <h3>$208.33</h3> <!-- borderbottom -->
-        <h3>$1,000,000</h3>
-        <p>Balance</p>
-
+      <div class="secure-wrapper">
+        <div>
+          drag me wheel thing
+          <p>Monthly Fee</p>
+          <h3>$208.33</h3> <!-- borderbottom -->
+          <h3>$1,000,000</h3>
+          <p>Balance</p>
+        </div>
+        <div class="secure-text-wrapper">
+          <h2>Say goodbye to high fees and hidden costs</h2>
+          <p>BLAAK's fee structure is transparent. Use the this tool to see how low our fees really are.</p>
+        </div>
       </div>
-      <h2>Say goodbye to high fees and hidden costs</h2>
-      <p>BLAAK's fee structure is transparent. Use the this tool to see how low our fees really are.</p>
     </section>
 
     <section>
-      <h2>Introducing this to you in 2016</h2>
-      <p>Our pledge is to help you build for a better future. Whether you have a hundred or thousands of dollars, you can start building your empire, now.</p>
+      <div class="coming-soon-wrapper">
+        <h2>Introducing this to you in 2016</h2>
+        <p>Our pledge is to help you build for a better future. Whether you have a hundred or thousands of dollars, you can start building your empire, now.</p>
+      </div>
     </section>
     <footer>
       <div class="footer-input">
@@ -82,10 +89,14 @@
       <div class="footer-social">
         <p>&copy; 2016 Acorns 2016 BLAAK | <a href="#">Terms & Conditions</a></p>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Mail</a></li>
+          <li>
+            <a href="#">
+              <img src="assets/icons/instagram.svg" alt="Instagram icon">
+            </a>
+          </li>
+          <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook icon"></a></li>
+          <li><a href="#"><img src="assets/icons/twitter.svg" alt="Twitter icon"></a></li>
+          <li><a href="#"><img src="assets/icons/email.svg" alt="Email icon"></a></li>
         </ul>
       </div>
     </footer>
