@@ -10,12 +10,12 @@
   </head>
   <body>
     <header>
-      <nav> <!-- Flex to end -->
+      <nav>
         <div class="nav-wrapper">
           <figure>
             <img src="../assets/BlaakAdvisor_Logo_Final.svg" alt="Blaak Advisor Logo">
           </figure>
-          <ul> <!-- Make uppercase -->
+          <ul>
             <li><a href="#">Sign In</a></li>
             <li><a href="#">Register</a></li>
           </ul>
@@ -87,7 +87,11 @@
     <section>
       <div class="secure-wrapper">
         <div>
-          drag me wheel thing
+          <div class="demo">
+            <p>&#215; 'cursor' mode</p>
+            <input class="knob" data-width="150" data-cursor=true data-fgColor="#222222" data-thickness=.3 value="29">
+            <input type="text" class="dial" data-min="0" data-max="40">
+          </div>
           <p>Monthly Fee</p>
           <h3>$208.33</h3> <!-- borderbottom -->
           <h3>$1,000,000</h3>
@@ -126,6 +130,6 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/packed.js"></script>
   </body>
 </html>
