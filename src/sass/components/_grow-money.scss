@@ -28,34 +28,38 @@
 .projected-value {
   h1 {
     margin-bottom: 0;
-    font-size: $size-xlg;
+    font-size: $size-xxlg;
   }
   h4 {
     margin-top: 0;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 }
 
 .grow-money-data-wrapper {
   border: 1px solid green;
   text-align: center;
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: flex-end;
-  // flex-wrap: wrap;
-
-
-  h2 {
-    border-bottom: 1px dotted $color-text-light;
-    font-size: $size-xlg;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint) {
+    width: 40em;
   }
   h2, h4, h6 {
     text-transform: uppercase;
     margin: 0 auto;
   }
+  h4, h6 {
+    letter-spacing: 0.1em;
+  }
+  h2 {
+    border-bottom: 1px dotted $color-text-light;
+    font-size: $size-xlg;
+  }
   h4 {
     margin-top: 0;
+    line-height: 1.5em;
   }
+
 }
 
 .start-with {
@@ -71,4 +75,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  // width: 100;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint) {
+    width: 22em;
+  }
 }
