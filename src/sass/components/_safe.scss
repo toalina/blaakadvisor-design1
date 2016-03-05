@@ -6,7 +6,8 @@
   justify-content: space-around;
   flex-wrap: wrap;
   .safe-text-wrapper {
-    max-width: 23em;
+    max-width: 25em;
+    padding-bottom: 2em;
     @media screen and (min-width: $breakpoint) {
       text-align: left;
     }

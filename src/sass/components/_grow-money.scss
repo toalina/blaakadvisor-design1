@@ -41,6 +41,7 @@
   border: 1px solid green;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 2em;
   @media screen and (min-width: $breakpoint) {
     width: 40em;
   }
@@ -52,14 +53,18 @@
     letter-spacing: 0.1em;
   }
   h2 {
-    border-bottom: 1px dotted $color-text-light;
     font-size: $size-xlg;
   }
   h4 {
     margin-top: 0;
     line-height: 1.5em;
   }
-
+  h6 {
+    opacity: 50%;
+  }
+  .dotted-border {
+    border-image:url('../assets/dotted-border-single.jpg') 5 space;
+    }
 }
 
 .start-with {

@@ -3,9 +3,14 @@ header {
   padding: 3em 2em;
   @media screen and (min-width: $breakpoint) {
 
-    }
+  }
   .header-text-wrapper {
     text-align: center;
+    @media screen and (min-width: $breakpoint) {
+      width: 50em;
+
+      margin: 0 auto;
+    }
     h1 {
       font-family: $font-montserrat-hairline;
       font-size: $size-xxlg;
@@ -18,7 +23,7 @@ header {
 
   .nav-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
     figure {
