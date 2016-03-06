@@ -8,12 +8,14 @@ header {
     text-align: center;
     @media screen and (min-width: $breakpoint) {
       width: 50em;
-
       margin: 0 auto;
     }
     h1 {
       font-family: $font-montserrat-hairline;
-      font-size: $size-xxlg;
+      font-size: $size-xlg;
+      @media screen and (min-width: $breakpoint) {
+        font-size: $size-xxlg;
+      }
     }
     h3 {
       font-family: $font-montserrat-light;

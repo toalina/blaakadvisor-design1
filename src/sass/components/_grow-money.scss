@@ -52,9 +52,9 @@
   h4, h6 {
     letter-spacing: 0.1em;
   }
-  h2 {
-    font-size: $size-xlg;
-  }
+  // h2 {
+  //   font-size: $size-xlg;
+  // }
   h4 {
     margin-top: 0;
     line-height: 1.5em;
@@ -64,7 +64,27 @@
   }
   .dotted-border {
     border-image:url('../assets/dotted-border-single.jpg') 5 space;
-    }
+  }
+  figure {
+
+  }
+  input {
+    width: 2.5em;
+    font-family: $font-montserrat-hairline;
+    font-size: $size-xlg;
+    padding: 0em;
+    padding-bottom: 0.1em;
+    background: transparent;
+    border: none;
+    text-align: center;
+    color: $color-text-light;
+    border-bottom: 4px dotted $color-primary;
+
+  }
+  span {
+    font-family: $font-montserrat-hairline;
+    font-size: $size-xlg;
+  }
 }
 
 .start-with {

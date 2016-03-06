@@ -26,10 +26,13 @@
         <h1>Smart investments made simple.</h1>
         <h3>Investing that's simple, smart, and secure.</h3>
       </div>
-      <fieldset class="header-input"> <!-- Grab JS code from site -->
-        <input type="text" placeholder="enter your email">
-        <button type="submit">Early Access</button>
-      </fieldset>
+      <form class="email-form" action="/mailchimp" method="post">
+        <fieldset class="header-input">
+          <input type="email" required placeholder="enter your email" class="input-email">
+          <button type="submit">Early Access</button>
+        </fieldset>
+      </form>
+
     </header>
 
     <section>
@@ -39,7 +42,7 @@
           <h2>Start today and see your money grow.</h2>
           <p>Our pledge is to help you build for a better future. Whether you have a hundred or thousands of dollars, you cna start building your empire, now.</p>
           <div class="projected-value">
-            <h1>$1,028</h1>
+            <h1 class="projection-output">$1,028</h1>
             <h4>Projected Value</h4>
           </div>
         </div>
@@ -48,25 +51,29 @@
           <div class="start-with">
             <h4>Start<br> with</h4>
             <figure>
-              <h2 class="dotted-border">$100</h2> <!-- dotted border bottom -->
+              <span>$</span>
+              <input name="startingAmount" step="5" type="number" min="1" value="100">
               <figcaption>
                 <h6>Adjust ^</h6>
               </figcaption>
             </figure>
             <h4>Now.<br> And</h4>
             <figure>
-              <h2 class="dotted-border">$25</h2>
+              <span>$</span>
+              <input name="monthlyContributions" type="number" step="5" min="1" value="25">
             </figure>
             <h4>Each<br> month.</h4>
           </div>
           <div class="years">
             <h4>For</h4>
             <figure>
-              <h2 class="dotted-border">$10</h2>
+              <input name="goalYears" type="number" min="1" value="10">
             </figure>
             <h4>Years</h4>
           </div>
         </div>
+
+        <div class="calc-chart"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="207" class="ct-chart-line" style="width: 100%; height: 207;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M50,137L50,135.257C69.537,134.38,128.148,131.951,167.222,129.997C206.296,128.042,245.37,125.829,284.444,123.531C323.519,121.233,362.593,118.812,401.667,116.21C440.741,113.608,479.815,110.866,518.889,107.92C557.963,104.974,597.037,101.869,636.111,98.533C675.185,95.197,714.259,91.681,753.333,87.903C792.407,84.126,831.481,80.145,870.556,75.867C909.63,71.589,948.704,67.082,987.778,62.238C1026.852,57.394,1065.926,52.29,1105,46.805C1144.074,41.32,1202.685,32.242,1222.222,29.33L1222.222,137Z" class="ct-area" values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path></g><g class="ct-series ct-series-b"><path d="M50,137L50,135.257C69.537,134.419,128.148,132.039,167.222,130.229C206.296,128.419,245.37,126.404,284.444,124.396C323.519,122.387,362.593,120.319,401.667,118.178C440.741,116.036,479.815,113.831,518.889,111.548C557.963,109.266,597.037,106.915,636.111,104.481C675.185,102.047,714.259,99.541,753.333,96.946C792.407,94.352,831.481,91.68,870.556,88.914C909.63,86.148,948.704,83.299,987.778,80.35C1026.852,77.401,1065.926,74.364,1105,71.22C1144.074,68.076,1202.685,63.109,1222.222,61.487L1222.222,137Z" class="ct-area" values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path></g><g class="ct-series ct-series-c"><path d="M50,137L50,135.257C69.537,134.458,128.148,132.135,167.222,130.465C206.296,128.795,245.37,126.98,284.444,125.238C323.519,123.495,362.593,121.753,401.667,120.011C440.741,118.269,479.815,116.527,518.889,114.785C557.963,113.043,597.037,111.302,636.111,109.56C675.185,107.819,714.259,106.077,753.333,104.336C792.407,102.594,831.481,100.853,870.556,99.112C909.63,97.371,948.704,95.63,987.778,93.889C1026.852,92.149,1065.926,90.408,1105,88.667C1144.074,86.927,1202.685,84.316,1222.222,83.446L1222.222,137Z" class="ct-area" values="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></path></g></g><g class="ct-labels"><foreignObject style="overflow: visible;" x="50" y="142" width="117.22222222222223" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">1</span></foreignObject><foreignObject style="overflow: visible;" x="167.22222222222223" y="142" width="117.22222222222223" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">2</span></foreignObject><foreignObject style="overflow: visible;" x="284.44444444444446" y="142" width="117.22222222222223" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">3</span></foreignObject><foreignObject style="overflow: visible;" x="401.6666666666667" y="142" width="117.22222222222223" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">4</span></foreignObject><foreignObject style="overflow: visible;" x="518.8888888888889" y="142" width="117.22222222222217" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">5</span></foreignObject><foreignObject style="overflow: visible;" x="636.1111111111111" y="142" width="117.22222222222229" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">6</span></foreignObject><foreignObject style="overflow: visible;" x="753.3333333333334" y="142" width="117.22222222222229" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">7</span></foreignObject><foreignObject style="overflow: visible;" x="870.5555555555557" y="142" width="117.22222222222217" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">8</span></foreignObject><foreignObject style="overflow: visible;" x="987.7777777777778" y="142" width="117.22222222222217" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 117px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">9</span></foreignObject><foreignObject style="overflow: visible;" x="1105" y="142" width="30" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 30px; height: 20px" xmlns="http://www.w3.org/1999/xhtml">10</span></foreignObject><foreignObject style="overflow: visible;" y="102.14285714285714" x="10" height="34.857142857142854" width="30"><span class="ct-label ct-vertical ct-start" style="height: 35px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$0</span></foreignObject><foreignObject style="overflow: visible;" y="67.28571428571428" x="10" height="34.857142857142854" width="30"><span class="ct-label ct-vertical ct-start" style="height: 35px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$2,000</span></foreignObject><foreignObject style="overflow: visible;" y="32.42857142857143" x="10" height="34.85714285714286" width="30"><span class="ct-label ct-vertical ct-start" style="height: 35px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$4,000</span></foreignObject><foreignObject style="overflow: visible;" y="2.4285714285714306" x="10" height="30" width="30"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 30px" xmlns="http://www.w3.org/1999/xhtml">$6,000</span></foreignObject></g></svg></div>
       </div>
     </section>
 
@@ -87,11 +94,21 @@
     <section>
       <div class="secure-wrapper">
         <div>
-          <div class="demo">
+          <!-- <div class="demo">
             <p>&#215; 'cursor' mode</p>
             <input class="knob" data-width="150" data-cursor=true data-fgColor="#222222" data-thickness=.3 value="29">
             <input type="text" class="dial" data-min="0" data-max="40">
+          </div> -->
+
+          <div class="demo">
+            <p>× 'cursor' mode</p>
+
+            <div style="display:inline;width:150px;height:200px;">
+              <canvas width="300" height="400" style="width: 150px; height: 200px;"></canvas>
+              <input class="knob" data-width="150" data-cursor="true" data-fgcolor="#222222" data-thickness=".5" value="29" style="width: 79px; height: 50px; position: absolute; vertical-align: middle; margin-top: 50px; margin-left: -114px; border: 0px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 30px; line-height: normal; font-family: Arial; text-align: center; color: rgb(34, 34, 34); padding: 0px; -webkit-appearance: none; background: none;">
+            </div>
           </div>
+
           <p>Monthly Fee</p>
           <h3>$208.33</h3> <!-- borderbottom -->
           <h3>$1,000,000</h3>
@@ -113,10 +130,12 @@
     <footer>
       <div class="footer-input">
         <h3><strong>Envision your future.</strong> We'll help you get there.</h3>
-        <fieldset>
-          <input type="text" placeholder="enter your email">
-          <button type="submit">Early Access</button>
-        </fieldset>
+        <form class="email-form" action="/mailchimp" method="post">
+          <fieldset class="header-input">
+            <input type="email" required placeholder="enter your email" class="input-email">
+            <button type="submit">Early Access</button>
+          </fieldset>
+        </form>
       </div>
       <div class="footer-social">
         <p>&copy; 2016 Acorns 2016 BLAAK | <a href="#">Terms & Conditions</a></p>
@@ -129,7 +148,7 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/packed.js"></script>
   </body>
 </html>
