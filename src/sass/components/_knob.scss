@@ -1,9 +1,12 @@
 div.demo{
   text-align: center;
-  width: 280px;
+  // width: 280px;
   float: left;
   background-color: $color-primary;
   border: 5px dotted pink;
-  height: 400px;
+  // height: 500px;
+  input {
+    font-family: $font-montserrat-light;
+  }
 }
 
