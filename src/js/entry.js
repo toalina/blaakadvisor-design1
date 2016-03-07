@@ -1,6 +1,6 @@
 // // jquery knob
-// require('./jquery.knob.min.js');
-// require('./knob-scripts.js');
+require('./jquery.knob.min.js');
+require('./knob-scripts.js');
 
 // grow money data calculator
 require('./blaak-trendline.js');
