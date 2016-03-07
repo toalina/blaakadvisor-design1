@@ -1,5 +1,5 @@
 $(function($) {
-    $(".knob").knob({
+    $(".dial").knob({
         change : function (value) {
             //console.log("change : " + value);
         },
