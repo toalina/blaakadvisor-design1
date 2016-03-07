@@ -1,4 +1,5 @@
 # blaakadvisor-design1
 
-- Run ```gulp```
-- View localhost:4000
+- Run ```gulp``` in project directory
+- View on localhost:4000
+
