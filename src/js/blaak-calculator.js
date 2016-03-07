@@ -4,7 +4,7 @@
     goalYears: $('[name="goalYears"]'),
     monthlyContributions: $('[name="monthlyContributions"]'),
     projectedValue: $('.projection-output')
-  }
+  };
 
   // Setup our BlaakTrendLine that all our returns will be based on
   var trendLine = new BlaakTrendLine({
@@ -28,7 +28,7 @@
       estimatedReturns.average,
       estimatedReturns.low
     ];
-  }
+  };
 
   /**
    * Adds commas to numbers
@@ -42,7 +42,7 @@
     N = N.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     // Finally add the number symbol
     return '$' + N;
-  }
+  };
 
   /**
    * Generates an array of incrementing numbers. If you pass 5 you'll get back
@@ -55,7 +55,7 @@
     return Array.apply(null, new Array(parseInt(N))).map(function (empty, index) {
         return index + 1;
     });
-  }
+  };
 
   /**
    * Validates that startingAmount and goalYears is 1 or greater and that no
@@ -100,61 +100,11 @@
     });
 
     if (!isCalculatorValid()) return;
-    var CalcChart = new Chartist.Line('.calc-chart', {
-      labels: generateLabelArray($elements.goalYears.val()),
-      series: yearSeries
-    },
-    {
-      low: yearSeries[1][0],
-      chartPadding: {
-        bottom: 40
-      },
-      showArea: true,
-      showLine: false,
-      showPoint: false,
-      fullWidth: true,
-      labelOffset: 20,
-      axisX: {
-        showGrid: false
-      },
-      axisY: {
-        onlyInteger: true,
-        showGrid: false,
-        labelInterpolationFnc: function(value) {
-          return formatNumber(value);
-        }
-      },
-      height: $('.calc').height() - 50
-    }, [
-      ['screen and (max-width: 545px)', {
-        axisX: {
-          showLabel: false
-        },
-        axisY: {
-          showLabel: false
-        }
-      }]]);
-
-    /*
-    CalcChart.on('draw', function(data) {
-      if(data.type === 'line' || data.type === 'area') {
-        data.element.animate({
-          d: {
-            begin: 500,
-            dur: 500,
-            from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-            to: data.path.clone().stringify(),
-            easing: Chartist.Svg.Easing.easeOutBack
-          }
-        });
-      }
-    });
-    */
 
     // Gets the last number in the average return array
     var projectedValue = returns[1][returns[1].length - 1];
     $elements.projectedValue.text(formatNumber(projectedValue))
-  }
+  };
 
   $('.calc-input input')
     .on('focus', function () {

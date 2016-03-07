@@ -1,12 +1,14 @@
 div.demo{
   text-align: center;
-  // width: 280px;
   float: left;
   background-color: $color-primary;
   border: 5px dotted pink;
-  // height: 500px;
-  input {
-    font-family: $font-montserrat-light;
+
+  .knob {
+    font-family: $font-montserrat-hairline;
+  }
+  input[attribute=value] {
+    font-family: $font-montserrat-hairline;
   }
 }
 
