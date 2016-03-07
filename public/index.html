@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blaak Advisor Design 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <figure>
+            <img src="../assets/BlaakAdvisor_Logo_Final.svg" alt="Blaak Advisor Logo">
+          </figure>
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-text-wrapper">
+        <h1>Smart investments made simple.</h1>
+        <h3>Investing that's simple, smart, and secure.</h3>
+      </div>
+      <form class="email-form" action="/mailchimp" method="post">
+        <fieldset class="header-input">
+          <input type="email" required placeholder="enter your email" class="input-email">
+          <button type="submit">Early Access</button>
+        </fieldset>
+      </form>
+
+    </header>
+
+    <section>
+      <div class="grow-money-wrapper">
+
+        <div class="grow-money-text-wrapper">
+          <h2>Start today and see your money grow.</h2>
+          <p>Our pledge is to help you build for a better future. Whether you have a hundred or thousands of dollars, you cna start building your empire, now.</p>
+          <div class="projected-value">
+            <h1 class="projection-output">$1,028</h1>
+            <h4>Projected Value</h4>
+          </div>
+        </div>
+
+        <div class="grow-money-data-wrapper calc-input">
+          <div class="start-with">
+            <h4>Start<br> with</h4>
+            <figure>
+              <span>$</span>
+              <input name="startingAmount" step="5" type="number" min="1" value="100">
+              <figcaption>
+                <h6>Adjust ^</h6>
+              </figcaption>
+            </figure>
+            <h4>Now.<br> And</h4>
+            <figure>
+              <span>$</span>
+              <input name="monthlyContributions" type="number" step="5" min="1" value="25">
+            </figure>
+            <h4>Each<br> month.</h4>
+          </div>
+          <div class="years">
+            <h4>For</h4>
+            <figure>
+              <input name="goalYears" type="number" min="1" value="10">
+            </figure>
+            <h4>Years</h4>
+          </div>
+        </div>
+      </div> <!-- Grow money wrapper -->
+    </section>
+
+    <section>
+      <div class="safe-wrapper">
+        <div class="safe-text-wrapper">
+          <h2>Safe and Secure</h2>
+          <p>We take the security of your information and your money very seriously. Nothing is stored on the phone, and we use bank-level security and data encryption to secure everything at the server level.</p>
+          <br>
+          <p>Every BLAAK account is insured up to $500,000 by the Securities Investor Protection Corporation (SIPC).</p>
+        </div>
+        <div>
+          <img src="../assets/fingerprint.jpg" alt="Fingerprint">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="secure-wrapper">
+
+        <div class="demo">
+          <p>Monthly Fee</p>
+          <input type="text" class="dial" data-width="350" data-height="350" data-min="0" data-max="300" data-cursor=true data-fgColor="#db0f49" data-thickness=.3 data-linecap="round" value="208.33" data-inputColor="#db0f49" data-font="Montserrat-Hairline">
+          <input type="text" class="dial" data-linecap="round" data-min="-50" data-max="50">
+          <h3>$208.33</h3>
+          <h3>$1,000,000</h3>
+          <p>Balance</p>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider-bubble">
+            <span class="fee">$1/mo</span>
+            <span class="balance">
+              Balance: <span class="output">$5,000</span>
+            </span>
+          </div>
+          <!-- 42474 value is the $5000 mark -->
+          <input
+          class="slider dial"
+          type="range"
+          min="0"
+          max="100000"
+          value="42474"
+          step="any"
+          data-linecap="round"
+          data-inputColor="#db0f49"
+          data-font="Montserrat-Hairline"
+          >
+        </div>
+
+        <div class="secure-text-wrapper">
+          <h2>Say goodbye to high fees and hidden costs</h2>
+          <p>BLAAK's fee structure is transparent. Use the this tool to see how low our fees really are.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="coming-soon-wrapper">
+        <h2>Introducing this to you in 2016</h2>
+        <p>Our pledge is to help you build for a better future. Whether you have a hundred or thousands of dollars, you can start building your empire, now.</p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-input">
+        <h3><strong>Envision your future.</strong> We'll help you get there.</h3>
+        <form class="email-form" action="/mailchimp" method="post">
+          <fieldset class="header-input">
+            <input type="email" required placeholder="enter your email" class="input-email">
+            <button type="submit">Early Access</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="footer-social">
+        <p>&copy; 2016 Acorns 2016 BLAAK | <a href="#">Terms & Conditions</a></p>
+        <ul>
+          <li><a href="#"><img src="assets/icons/instagram.svg" alt="Instagram icon"></a></li>
+          <li><a href="#"><img src="assets/icons/facebook.svg" alt="Facebook icon"></a></li>
+          <li><a href="#"><img src="assets/icons/twitter.svg" alt="Twitter icon"></a></li>
+          <li><a href="#"><img src="assets/icons/email.svg" alt="Email icon"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/mailchimp.js"></script>
+    <script src="js/blaak-trendline.js"></script>
+    <script src="js/blaak-calculator.js"></script>
+    <script src="js/jquery.knob.min.js"></script>
+    <script src="js/knob-scripts.js"></script>
+    <script src="js/blaak-slider.js"></script>
+
+  </body>
+</html>
