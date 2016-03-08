@@ -52,15 +52,12 @@
   h4, h6 {
     letter-spacing: 0.1em;
   }
-  // h2 {
-  //   font-size: $size-xlg;
-  // }
   h4 {
     margin-top: 0;
     line-height: 1.5em;
   }
-  h6 {
-    opacity: 50%;
+  figcaption {
+    opacity: 20%;
   }
   .dotted-border {
     border-image:url('../assets/dotted-border-single.jpg') 5 space;

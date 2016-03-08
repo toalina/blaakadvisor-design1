@@ -3,7 +3,9 @@ div.demo{
   float: left;
   background-color: $color-primary;
   border: 5px dotted pink;
+}
 
-
+.fee, .balance {
+  font-family: $font-montserrat-light;
 }
 
