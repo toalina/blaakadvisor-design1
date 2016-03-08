@@ -1,7 +1,8 @@
 .coming-soon-wrapper {
   text-align: center;
-  background: $color-accent;
-  color: $color-text-light;
+  background: url(../assets/guilloche.svg) no-repeat center top $color-primary;
+  background-size: cover;
+  color: $color-text-dark;
   padding: 3em 2em;
   h2 {
     font-size: $size-xlg;
