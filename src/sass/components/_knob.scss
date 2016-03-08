@@ -5,7 +5,19 @@ div.demo{
   border: 5px dotted pink;
 }
 
-.fee, .balance {
-  font-family: $font-montserrat-light;
+.slider-wrapper {
+  text-align: center;
+  // background-color: $color-primary;
+  border: 5px dotted pink;
+  span {
+    font-family: $font-montserrat-light;
+  }
+  input {
+    background-color: $color-secondary;
+
+  }
 }
+// .fee, .balance {
+//   font-family: $font-montserrat-light;
+// }
 

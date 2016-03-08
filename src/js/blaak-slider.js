@@ -1,3 +1,21 @@
+
+
+$(".dial").knob({
+  change : function (value) {
+    // console.log("change : " + value);
+  },
+  release : function (value) {
+    console.log(this.$.attr('value'));
+    console.log("release : " + value);
+    // Some code to return value for use?!
+  },
+  cancel : function () {
+    console.log("cancel : ", this);
+  },
+
+});
+
+
 function Slider(options) {
   options = options || {};
   this.minpos = options.minpos || 0;
