@@ -1,54 +1,23 @@
-fieldset {
+// There's a bug preventing flexbox on fieldsets so use this instead
+// https://bugs.chromium.org/p/chromium/issues/detail?id=375693
+// https://bugzilla.mozilla.org/show_bug.cgi?id=292736
+[role=group] {
   border-radius: 1em;
-  padding: 0.2em 1em;
+  padding: 8px;
   background: $color-primary;
   margin: 0 auto;
   display: block;
   text-align: center;
-  @media screen and (min-width: $breakpoint) {
-    max-width: 420px;
-    padding: 0em 0.2em 0em 0.5em;
-  }
-}
-::-webkit-input-placeholder {
-  text-align: center;
-  @media screen and (min-width: $breakpoint) {
-    text-align: left;
-  }
 }
 
-:-moz-placeholder { /* Firefox 18- */
-  text-align: center;
-  @media screen and (min-width: $breakpoint) {
-    text-align: left;
-  }
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-  text-align: center;
-  @media screen and (min-width: $breakpoint) {
-    text-align: left;
-  }
-}
-
-:-ms-input-placeholder {
-  text-align: center;
-  @media screen and (min-width: $breakpoint) {
-    text-align: left;
-  }
-}
 input, button {
   display: block;
   margin: 0 auto;
 }
 input {
-  width: 13em;
   border: none;
   padding: 0.8em;
   margin: 0.2em auto;
-  @media screen and (min-width: $breakpoint) {
-    display: inline-block;
-  }
 }
 button {
   border: none;
@@ -56,11 +25,6 @@ button {
   background: $color-button;
   color: $color-text-light;
   text-transform: uppercase;
-  padding: 1em;
-  width: 11em;
-  margin: 0.2em auto;
-  font-family: $font-montserrat-light;
-    @media screen and (min-width: $breakpoint) {
-    display: inline-block;
-  }
+  padding: 0.8em 1em;
+  font-family: $font-montserrat-regular;
 }
