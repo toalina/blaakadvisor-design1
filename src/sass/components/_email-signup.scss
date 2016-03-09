@@ -1,0 +1,33 @@
+.email-signup {
+  background: #621F59;
+  padding: 15px;
+
+  @media screen and (max-width: 395px) {
+    .header-input {
+      flex-direction: column;
+    }
+    .input-email {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .input-submit {
+      width: 100%;
+    }
+  }
+  
+  .email-form {
+    width: 100%;
+    max-width: 575px;
+    margin: 0 auto;
+  }
+  .header-input {
+    display: flex;
+  }
+  .input-email {
+    flex-grow: 1;
+  }
+  .input-submit {
+    flex-shrink: 0;
+  }
+}
