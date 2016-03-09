@@ -1,23 +1,12 @@
-div.demo{
-  text-align: center;
-  float: left;
-  background-color: $color-primary;
-  border: 5px dotted pink;
-}
-
 .slider-wrapper {
   text-align: center;
-  // background-color: $color-primary;
-  border: 5px dotted pink;
+  background-color: $color-primary;
   span {
     font-family: $font-montserrat-light;
+    font-size: $size-med;
   }
   input {
     background-color: $color-secondary;
-
   }
 }
-// .fee, .balance {
-//   font-family: $font-montserrat-light;
-// }
 
