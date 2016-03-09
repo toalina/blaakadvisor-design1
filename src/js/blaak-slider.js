@@ -1,5 +1,6 @@
-
-
+/* =====
+Code for using jquery.knob library
+==== */
 $(".dial").knob({
   change : function (value) {
     // console.log("change : " + value);
@@ -15,7 +16,9 @@ $(".dial").knob({
 
 });
 
-
+/* ======
+Code take from blaakadvisor.com to do math on the Slider component, now converted to a jquery.knob
+====== */
 function Slider(options) {
   options = options || {};
   this.minpos = options.minpos || 0;
