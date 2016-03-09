@@ -33,20 +33,22 @@ header {
   }
   .header-text-wrapper {
     text-align: center;
-    @media screen and (min-width: $breakpoint) {
-      width: 50em;
-      margin: 0 auto;
-    }
     h1 {
       font-family: $font-montserrat-hairline;
       font-size: $size-xlg;
-      @media screen and (min-width: $breakpoint) {
-        font-size: $size-xxlg;
+      @media screen and (max-width: 500px) {
+        font-size: $size-lg
+      }
+      @media screen and (max-width: 360px) {
+        font-size: $size-med
       }
     }
     h3 {
       font-family: $font-montserrat-light;
       line-height: 2em;
+      @media screen and (max-width: 500px) {
+        font-size: $size-sm
+      }
     }
   }
 
