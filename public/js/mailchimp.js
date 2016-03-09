@@ -2,7 +2,7 @@
 // make it just a little easier for them to submit it. But if they have
 // submitted it don't focus so that the browser remembers their scroll position.
 if (!localStorage.submittedEmail) {
-  $('.input-email').focus();
+  $('.input-email').first().focus();
 }
 
 $('.email-form').on('submit', function () {
