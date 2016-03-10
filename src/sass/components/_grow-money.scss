@@ -83,6 +83,17 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  figure {
+    display: flex;
+    flex-basis: 150px;
+    flex-wrap: wrap;
+    span {
+      margin-top: 8px;
+    }
+    .start-caption {
+      margin-left: 55px;
+    }
+  }
 }
 .years {
   display: flex;
