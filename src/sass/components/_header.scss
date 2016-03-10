@@ -25,11 +25,23 @@ header {
   font-family: $font-montserrat-light;
   display: flex;
   flex-direction: column;
-  height: 95vh;
   box-sizing: border-box;
   padding: 3em 2em;
   @media screen and (min-width: $breakpoint) {
 
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .header-text-wrapper {
     text-align: center;
