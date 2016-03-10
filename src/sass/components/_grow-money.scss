@@ -7,22 +7,17 @@
       #c92252
     );
   color: $color-text-light;
-  h1, h3, h4 {
-    font-family: $font-montserrat-light;
-  }
 }
 .grow-money-text-wrapper {
   text-align: center;
+  max-width: 875px;
+  margin: 0 auto;
   @media screen and (min-width: $breakpoint) {
     padding-left: 3em;
     padding-right: 3em;
   }
   h2 {
-    font-size: $size-xlg;
     margin-bottom: 0.3em;
-  }
-  p {
-    line-height: 2em;
   }
 }
 .projected-value {

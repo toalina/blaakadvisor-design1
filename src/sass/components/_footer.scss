@@ -5,11 +5,26 @@
   padding: 1em 3em;
 
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 
-  fieldset {
-    margin-right: 0;
+  .email-signup {
+    background: transparent;
+    padding: 0;
+  }
+  .footer-title {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  [role="group"] {
+    margin-left: 10px;
+    max-width: 425px;
+    width: 100%;
+  }
+  @media screen and (max-width: 850px) {
+      flex-direction: column;
+      text-align: center;
+      [role="group"] {
+        max-width: 100%;
+      }
   }
 }
 
