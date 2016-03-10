@@ -27,9 +27,6 @@ header {
   flex-direction: column;
   box-sizing: border-box;
   padding: 3em 2em;
-  @media screen and (min-width: $breakpoint) {
-
-  }
   .video-container {
     position: relative;
     width: 100%;
