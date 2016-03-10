@@ -31,3 +31,22 @@
     flex-shrink: 0;
   }
 }
+
+.mailchimp-response {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  height: 75px;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+  color: $color-text-light;
+  background-color: $color-success; 
+  transition: top 0.5s ease;
+  &.hide {
+    top: -75px;
+  }
+  &.error {
+    background-color: $color-error; 
+  }
+}

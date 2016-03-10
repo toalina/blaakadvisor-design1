@@ -10,8 +10,10 @@
   "author": "Alina To <alina.to@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "request": "^2.69.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

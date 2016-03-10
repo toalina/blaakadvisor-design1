@@ -5,29 +5,36 @@ if (!localStorage.submittedEmail) {
   $('.input-email').first().focus();
 }
 
-$('.email-form').on('submit', function () {
+var emailRequest = function (formId) {
   $.ajax({
     url: '/mailchimp',
     type: 'post',
     data: {
-      email: $('.input-email').val()
+      email: $('.input-email-'+formId).val()
     },
     dataType: 'json',
     complete: function (xhr, response) {
-      if (xhr.responseJSON == undefined) {
-        $('.mailchimp-error-response').html('<p>Uh oh something went wrong. Try again?</p>').show();
+      var json = JSON.parse(xhr.responseText);
+      var $responseDisplay = $('.mailchimp-response');
+      if (json == undefined) {
+        $responseDisplay.text('Uh oh something went wrong. Try again?').removeClass('hide').addClass('error');
       }
-      else if (xhr.responseJSON.error) {
-        $('.mailchimp-error-response').html('<p>Uh oh something went wrong. Try again?</p>').show();
+      else if (json.status == "error") {
+        $responseDisplay.text('Uh oh something went wrong. Try again?').removeClass('hide').addClass('error');
       }
       else {
         localStorage.submittedEmail = true;
-        $('.mailchimp-error-response').hide();
-        $('.email-form').fadeOut(function () {
-          $('.mailchimp-response').fadeIn();
-        });
+        $responseDisplay.text(json.message).removeClass('error hide');
       }
+      setTimeout(function () {
+        $responseDisplay.addClass('hide');
+      }, 5000);
     }
   })
+};
+
+$('.email-form').on('submit', function (e) {
+  var formId = $(this).data('form-id');
+  emailRequest(formId);
   return false;
 });
