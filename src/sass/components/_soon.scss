@@ -4,17 +4,7 @@
   background-size: cover;
   color: $color-text-dark;
   padding: 3em 2em;
-  h2 {
-    font-size: $size-xlg;
-    // font-weight: 300;
-    margin-bottom: 0.3em;
-
-  }
   p {
-    margin: 0;
-    padding-bottom: 3em;
-    line-height: 2em;
-
     @media screen and (min-width: $breakpoint) {
       padding-left: 3em;
       padding-right: 3em;
