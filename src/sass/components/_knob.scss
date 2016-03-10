@@ -1,12 +1,56 @@
-.slider-wrapper {
+.knob-wrapper {
+  position: relative;
   text-align: center;
-  background-color: $color-primary;
+  width: 350px;
+  height: 350px;
+  // background-color: $color-primary;
   span {
     font-family: $font-montserrat-light;
     font-size: $size-med;
   }
   input {
     background-color: $color-secondary;
+    display: none;
+  }
+  canvas {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+  .circle-bg {
+    z-index: 0;
+    border-radius: 100%;
+    height: 290px;
+    width: 290px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: $color-primary;
   }
 }
 
+.knob-output {
+  position: absolute;
+  top: 90px;
+  z-index: 1;
+  width: 100%;
+  span {
+    display: block;
+  }
+  .fee-title, .balance-title {
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  .fee {
+    padding-bottom: 5px;
+    font-size: $size-xlg;
+    color: #D8174D;
+    display: inline-block;
+    border-bottom: 4px solid #D8174D;
+  }
+  .balance {
+    font-family: $font-montserrat-hairline;
+    font-size: $size-xlg;
+  }
+}
